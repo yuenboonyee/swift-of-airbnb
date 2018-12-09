@@ -88,7 +88,7 @@ class AirbnbDatePickerCell: BaseCell {
             dateLabel.layer.borderWidth = 0
             dateLabel.layer.backgroundColor = UIColor.clear.cgColor
             dateLabel.layer.mask = nil
-            dateLabel.textColor = Theme.SECONDARY_COLOR
+            dateLabel.textColor = Theme.PAST_TEXT_COLOR
 
         } else if type.contains(.Today) {
             
@@ -106,7 +106,7 @@ class AirbnbDatePickerCell: BaseCell {
             dateLabel.layer.borderWidth = 0
             dateLabel.layer.backgroundColor = UIColor.clear.cgColor
             dateLabel.layer.mask = nil
-            dateLabel.textColor = UIColor.white
+            dateLabel.textColor = Theme.VALID_TEXT_COLOR
 
         }
         
