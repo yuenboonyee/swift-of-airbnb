@@ -57,7 +57,7 @@ class AirbnbDatePickerCell: BaseCell {
         if type.contains(.Selected) || type.contains(.SelectedStartDate) || type.contains(.SelectedEndDate) || type.contains(.InBetweenDate) {
             
             dateLabel.layer.cornerRadius = 0
-            dateLabel.layer.borderColor = UIColor.white.cgColor
+            dateLabel.layer.borderColor = UIColor.clear.cgColor
             dateLabel.layer.borderWidth = 1
             dateLabel.layer.backgroundColor = highlightedDateRangeColor
             dateLabel.layer.mask = nil
