@@ -9,16 +9,21 @@
 import UIKit
 
 class AirbnbDatePickerCell: BaseCell {
-    // FIXME: Replace with ability to specify the  colour via the initializer.
+    // FIXME: Replace with ability to specify the colour via the initializer.
     /// Colour for the selected date range.
     let highlightedDateRangeColor = UIColor(hex: "512698").cgColor
+    
+    // FIXME: Replace with ability to specify the font via the initializer.
+    /// Font for the date cells
+    static let dateFont = UIFont.boldSystemFont(ofSize: 15)
+    
     var type: AirbnbDatePickerCellType! = []
     
     var dateLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.font = AirbnbDatePickerCell.dateFont
         label.textColor = UIColor.white
         return label
     }()
