@@ -61,7 +61,7 @@ class AirbnbDatePickerCell: BaseCell {
             dateLabel.layer.borderWidth = 1
             dateLabel.layer.backgroundColor = highlightedDateRangeColor
             dateLabel.layer.mask = nil
-            dateLabel.textColor = Theme.SECONDARY_COLOR
+            dateLabel.textColor = Theme.SELECTED_TEXT_COLOR
             
             if type.contains(.SelectedStartDate) {
                 let side = frame.size.width / 2
