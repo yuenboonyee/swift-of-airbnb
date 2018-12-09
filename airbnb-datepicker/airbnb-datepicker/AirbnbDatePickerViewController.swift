@@ -114,7 +114,7 @@ public class AirbnbDatePickerViewController: UICollectionViewController {
     
     lazy var dismissButton: UIBarButtonItem = {
         let btn = UIButton(type: UIButtonType.custom)
-        btn.setImage(UIImage(named: "Delete"), for: .normal)
+        btn.setImage(UIImage(named: "Close"), for: .normal)
         btn.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
         btn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
         btn.addTarget(self, action: #selector(AirbnbDatePickerViewController.handleDismiss), for: .touchUpInside)

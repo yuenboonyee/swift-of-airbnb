@@ -32,7 +32,6 @@ class AirbnbDatePickerFooter: UIView {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.backgroundColor = Theme.WHITE
-        btn.border
         btn.setTitleColor(Theme.PURPLE, for: .normal)
         btn.setTitle("Save", for: .normal)
         btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
