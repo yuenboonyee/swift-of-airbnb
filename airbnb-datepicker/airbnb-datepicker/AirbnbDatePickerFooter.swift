@@ -12,6 +12,7 @@ protocol AirbnbDatePickerFooterDelegate {
     func didSave()
 }
 
+/// The view containing the 'Save' button
 class AirbnbDatePickerFooter: UIView {
     
     var delegate: AirbnbDatePickerFooterDelegate?
@@ -30,8 +31,9 @@ class AirbnbDatePickerFooter: UIView {
     lazy var saveButton: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.backgroundColor = Theme.SECONDARY_COLOR
-        btn.setTitleColor(UIColor.white, for: .normal)
+        btn.backgroundColor = Theme.WHITE
+        btn.border
+        btn.setTitleColor(Theme.PURPLE, for: .normal)
         btn.setTitle("Save", for: .normal)
         btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         btn.addTarget(self, action: #selector(AirbnbDatePickerFooter.handleSave), for: .touchUpInside)
