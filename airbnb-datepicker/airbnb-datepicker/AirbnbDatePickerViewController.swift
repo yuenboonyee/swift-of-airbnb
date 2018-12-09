@@ -125,6 +125,7 @@ public class AirbnbDatePickerViewController: UICollectionViewController {
     lazy var clearButton: UIBarButtonItem = {
         let btn = UIButton(type: UIButtonType.custom)
         btn.setTitle("Clear", for: .normal)
+        btn.setTitleColor(Theme.RED, for: .normal)
         btn.frame = CGRect(x: 0, y: 0, width: 100, height: 20)
         btn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.right
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 15)

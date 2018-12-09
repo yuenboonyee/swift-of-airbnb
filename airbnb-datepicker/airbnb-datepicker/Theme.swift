@@ -15,6 +15,7 @@ class Theme {
     static let SECONDARY_COLOR = UIColor(r: 65, g: 171, b: 175)
     static let BACKGROUND_COLOR = UIColor(r: 255, g: 255, b: 255)
     static let PURPLE = UIColor(hex: "512698")
+    static let RED = UIColor(hex: "D6083B")
     static let WHITE = UIColor(hex: "ffffff")
 
     /// Selected date range colour.
