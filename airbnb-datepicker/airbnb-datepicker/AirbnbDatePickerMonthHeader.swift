@@ -13,7 +13,7 @@ class AirbnbDatePickerMonthHeader: BaseCell {
     var monthLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = UIColor.white
+        label.textColor = Theme.PURPLE
         label.font = UIFont.systemFont(ofSize: 24)
         return label
     }()
