@@ -8,6 +8,7 @@
 
 import UIKit
 
+// FIXME: Refactor this to make the colours configurable by the user.
 class Theme {
     
     static let PRIMARY_COLOR = UIColor(r: 0, g: 132, b: 137)
