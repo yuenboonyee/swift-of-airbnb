@@ -9,7 +9,9 @@
 import UIKit
 
 class AirbnbDatePickerCell: BaseCell {
-    
+    // FIXME: Replace with ability to specify the  colour via the initializer.
+    /// Colour for the selected date range.
+    let highlightedDateRangeColor = UIColor(hex: "512698").cgColor
     var type: AirbnbDatePickerCellType! = []
     
     var dateLabel: UILabel = {
@@ -52,7 +54,7 @@ class AirbnbDatePickerCell: BaseCell {
             dateLabel.layer.cornerRadius = 0
             dateLabel.layer.borderColor = UIColor.white.cgColor
             dateLabel.layer.borderWidth = 1
-            dateLabel.layer.backgroundColor = UIColor.white.cgColor
+            dateLabel.layer.backgroundColor = highlightedDateRangeColor
             dateLabel.layer.mask = nil
             dateLabel.textColor = Theme.SECONDARY_COLOR
             
