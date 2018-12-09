@@ -11,7 +11,7 @@ import UIKit
 class AirbnbDatePickerCell: BaseCell {
     // FIXME: Replace with ability to specify the colour via the initializer.
     /// Colour for the selected date range.
-    let highlightedDateRangeColor = UIColor(hex: "512698").cgColor
+    let highlightedDateRangeColor = Theme.SELECTED_RANGE_COLOR.cgColor
     
     // FIXME: Replace with ability to specify the font via the initializer.
     /// Font for the date cells

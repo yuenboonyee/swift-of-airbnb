@@ -13,7 +13,13 @@ class Theme {
     
     static let PRIMARY_COLOR = UIColor(r: 0, g: 132, b: 137)
     static let SECONDARY_COLOR = UIColor(r: 65, g: 171, b: 175)
+    static let BACKGROUND_COLOR = UIColor(r: 255, g: 255, b: 255)
+    static let PURPLE = UIColor(hex: "512698")
+    static let WHITE = UIColor(hex: "ffffff")
+
+    /// Selected date range colour.
     static let SELECTED_TEXT_COLOR = UIColor(r: 255, g: 255, b: 255)
+    static let SELECTED_RANGE_COLOR = PURPLE
 
     /// Past dates
     static let PAST_TEXT_COLOR = UIColor(hex: "4A4A4A")
